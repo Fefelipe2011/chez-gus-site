@@ -1,0 +1,5 @@
+# Force les navigateurs à revérifier les fichiers (évite le CSS/JS périmé en cache)
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+/script.js
+  Cache-Control: public, max-age=0, must-revalidate

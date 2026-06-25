@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nouveautés — Chez Gus, Friterie à Thulin (Hensies)</title>
+  <meta name="description" content="Les nouveautés de Chez Gus : nouveaux burgers et créations du moment à découvrir en friterie." />
+  <meta name="theme-color" content="#4f5b39" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body>
+
+  <!-- ===== BARRE DE NAVIGATION GLASSMORPHISM ===== -->
+  <nav class="glass-nav" aria-label="Navigation principale">
+    <a href="index.html#accueil" class="glass-nav__brand">
+      <img src="assets/logo.png" alt="Logo Chez Gus" onerror="this.style.display='none'" />
+      <span>Chez Gus</span>
+    </a>
+    <ul class="glass-nav__links">
+      <li><a href="index.html#accueil" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21v-6h6v6"/></svg></span>
+        <span class="gnav-txt">Accueil</span></a></li>
+      <li><a href="carte.html" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2"/><path d="M5 2v20"/><path d="M19 2v20"/><path d="M19 12c1.66 0 3-1.79 3-4s-1.34-4-3-4"/></svg></span>
+        <span class="gnav-txt">Carte</span></a></li>
+      <li><a href="nouveautes.html" class="gnav-link is-active">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg></span>
+        <span class="gnav-txt">Nouveautés</span></a></li>
+      <li><a href="index.html#galerie" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></span>
+        <span class="gnav-txt">Galerie</span></a></li>
+      <li><a href="index.html#avis" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg></span>
+        <span class="gnav-txt">Avis</span></a></li>
+      <li><a href="index.html#infos" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="gnav-txt">Infos</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="carte-hero">
+    <div class="container">
+      <h1>Nouveautés</h1>
+      <p>Les dernières créations à découvrir chez Gus. (Page à compléter par Chez Gus.)</p>
+    </div>
+  </header>
+
+  <!-- ===== NOUVEAUTÉS =====
+       Pour ajouter une nouveauté : copie un bloc <article class="news-card"> et modifie
+       l'image, le titre, la description et le prix. -->
+  <main class="news section">
+    <div class="container">
+      <div class="news__grid">
+        <article class="news-card">
+          <div class="news-card__media">
+            <span class="news-card__badge">Nouveau</span>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=420&fit=crop" alt="Nouveau burger" loading="lazy" onerror="this.src='https://picsum.photos/seed/chezgus-new1/600/420'" />
+          </div>
+          <div class="news-card__body">
+            <h3>Le Gus Bacon BBQ</h3>
+            <p>Double steak Angus, bacon croustillant, cheddar fondu et sauce BBQ maison.</p>
+            <span class="news-card__price">10,50 €</span>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__media">
+            <span class="news-card__badge">Nouveau</span>
+            <img src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?w=600&h=420&fit=crop" alt="Burger spicy" loading="lazy" onerror="this.src='https://picsum.photos/seed/chezgus-new2/600/420'" />
+          </div>
+          <div class="news-card__body">
+            <h3>Le Spicy Chèvre-Miel</h3>
+            <p>Poulet croustillant, chèvre, miel et un filet de sauce piquante. Doux et relevé.</p>
+            <span class="news-card__price">9,50 €</span>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card__media">
+            <span class="news-card__badge">Nouveau</span>
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&h=420&fit=crop" alt="Burger du moment" loading="lazy" onerror="this.src='https://picsum.photos/seed/chezgus-new3/600/420'" />
+          </div>
+          <div class="news-card__body">
+            <h3>Le Burger du moment</h3>
+            <p>La création surprise de la semaine, à découvrir en friterie.</p>
+            <span class="news-card__price">9,00 €</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="carte-cta">
+        <a href="index.html" class="btn btn--primary btn--back">← Retour à l'accueil</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="brand__name brand__name--footer">Chez Gus</span>
+        <p>Votre friterie conviviale à Thulin (Hensies). Frites fraîches, burgers maison et bonne humeur.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="carte.html">La carte complète</a></li>
+          <li><a href="nouveautes.html">Nouveautés</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="index.html#avis">Avis</a></li>
+          <li><a href="index.html#infos">Infos & Horaires</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/chezgus7350/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ChezGusFriterie/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:chezgus7350@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Chez Gus, Thulin (Hensies). Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

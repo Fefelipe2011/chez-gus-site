@@ -1,0 +1,7 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Capture d'écran source du logo (le logo utilisé est dans assets/logo.png)
+Capture*.png

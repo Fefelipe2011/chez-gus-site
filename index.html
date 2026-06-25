@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chez Gus, Friterie à Thulin (Hensies) | Frites, Burgers & Spécialités</title>
+  <meta name="description" content="Chez Gus, votre friterie conviviale à Thulin (Hensies). Frites fraîches, burgers maison au steak Angus, snacks et spécialités belges. Note 4,7/5 sur Google. 37 Avenue Paul Pastur." />
+  <meta name="theme-color" content="#4f5b39" />
+
+  <!-- Open Graph (aperçu sur Facebook / WhatsApp) -->
+  <meta property="og:title" content="Chez Gus, Friterie à Thulin (Hensies)" />
+  <meta property="og:description" content="Frites fraîches, burgers maison et spécialités belges. 4,7/5 sur Google." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="fr_BE" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body>
+
+  <!-- ===== BARRE DE NAVIGATION GLASSMORPHISM (flottante) ===== -->
+  <nav class="glass-nav" id="glassNav" aria-label="Navigation principale">
+    <a href="#accueil" class="glass-nav__brand">
+      <img src="assets/logo.png" alt="Logo Chez Gus" onerror="this.style.display='none'" />
+      <span>Chez Gus</span>
+    </a>
+    <ul class="glass-nav__links">
+      <li><a href="#accueil" class="gnav-link is-active" data-section="accueil">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21v-6h6v6"/></svg></span>
+        <span class="gnav-txt">Accueil</span></a></li>
+      <li><a href="carte.html" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h0a2 2 0 0 0 2-2V2"/><path d="M5 2v20"/><path d="M19 2v20"/><path d="M19 12c1.66 0 3-1.79 3-4s-1.34-4-3-4"/></svg></span>
+        <span class="gnav-txt">Carte</span></a></li>
+      <li><a href="nouveautes.html" class="gnav-link">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg></span>
+        <span class="gnav-txt">Nouveautés</span></a></li>
+      <li><a href="#galerie" class="gnav-link" data-section="galerie">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></span>
+        <span class="gnav-txt">Galerie</span></a></li>
+      <li><a href="#avis" class="gnav-link" data-section="avis">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg></span>
+        <span class="gnav-txt">Avis</span></a></li>
+      <li><a href="#infos" class="gnav-link" data-section="infos">
+        <span class="gnav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="gnav-txt">Infos</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero__content container">
+      <img src="assets/logo.png" alt="Logo Chez Gus" class="hero__logo reveal"
+           onerror="this.style.display='none'" />
+      <p class="hero__eyebrow reveal">Friterie artisanale à Thulin, Hensies</p>
+      <h1 class="hero__title reveal">Chez Gus</h1>
+      <p class="hero__tagline reveal">La vraie frite belge, croustillante dehors et fondante dedans.
+        Burgers maison au steak Angus, snacks et spécialités à emporter.</p>
+      <div class="hero__actions reveal">
+        <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
+        <a href="#contact" class="btn btn--ghost">Nous trouver</a>
+      </div>
+      <div class="hero__badge reveal">
+        <span class="hero__stars" aria-hidden="true">★★★★★</span>
+        <span><strong>4,7/5</strong> sur Google, 184 avis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATOUTS ===== -->
+  <section class="perks">
+    <div class="container perks__grid">
+      <div class="perk reveal">
+        <span class="perk__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+        </span>
+        <h3>Frites fraîches</h3>
+        <p>Pommes de terre fraîches, cuisson traditionnelle. Le vrai goût de la friterie.</p>
+      </div>
+      <div class="perk reveal">
+        <span class="perk__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5Z"/></svg>
+        </span>
+        <h3>Burgers maison</h3>
+        <p>Steak Angus, pain de qualité et mayonnaise maison, préparés à la commande.</p>
+      </div>
+      <div class="perk reveal">
+        <span class="perk__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </span>
+        <h3>Accueil convivial</h3>
+        <p>Un service chaleureux et des portions généreuses, comme à la maison.</p>
+      </div>
+      <div class="perk reveal">
+        <span class="perk__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
+        <h3>À emporter</h3>
+        <p>Commande sur place et repars avec ton repas bien chaud en quelques minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARTE / MENU ===== -->
+  <section class="section carte-teaser" id="carte">
+    <div class="container section__head reveal">
+      <p class="section__eyebrow">Notre carte</p>
+      <h2 class="section__title">De quoi se régaler</h2>
+      <p class="section__note">Frites fraîches, burgers au steak Angus, snacks, mitraillettes, assiettes et bien plus encore.</p>
+      <div class="carte-cta">
+        <a href="carte.html" class="btn btn--primary">Voir la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE (card fan carousel, fidèle au composant) ===== -->
+  <section class="gallery" id="galerie">
+    <div class="container section__head reveal">
+      <p class="section__eyebrow">En images</p>
+      <h2 class="section__title">La galerie gourmande</h2>
+      <p class="section__note">Photos d'illustration : elles seront remplacées par les vraies photos de Chez Gus.</p>
+    </div>
+
+    <div class="fan" id="fan">
+      <div class="fan-outer">
+        <div class="fan-layout" id="fanLayout">
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=700&fit=crop" loading="lazy" alt="Frites maison croustillantes" onerror="this.src='https://picsum.photos/seed/chezgus-1/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=700&fit=crop" loading="lazy" alt="Burger au steak Angus" onerror="this.src='https://picsum.photos/seed/chezgus-2/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=700&fit=crop" loading="lazy" alt="Snacks de friterie" onerror="this.src='https://picsum.photos/seed/chezgus-3/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=700&fit=crop" loading="lazy" alt="Cheeseburger maison" onerror="this.src='https://picsum.photos/seed/chezgus-4/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=700&fit=crop" loading="lazy" alt="Frites et sauce maison" onerror="this.src='https://picsum.photos/seed/chezgus-5/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=700&fit=crop" loading="lazy" alt="Menu complet" onerror="this.src='https://picsum.photos/seed/chezgus-6/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=700&fit=crop" loading="lazy" alt="Spécialité gourmande" onerror="this.src='https://picsum.photos/seed/chezgus-7/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=700&fit=crop" loading="lazy" alt="Assiette gourmande" onerror="this.src='https://picsum.photos/seed/chezgus-8/400/700'" /></div></div>
+          <div class="fan-card"><div class="fan-card__img"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=700&fit=crop" loading="lazy" alt="Burger gourmand" onerror="this.src='https://picsum.photos/seed/chezgus-9/400/700'" /></div></div>
+        </div>
+      </div>
+
+      <div class="fan-pager" id="fanPager">
+        <button class="fan-arrow" id="fanPrev" aria-label="Précédent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="fan-dots" id="fanDots"></div>
+        <button class="fan-arrow" id="fanNext" aria-label="Suivant">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX (agrandissement des photos) ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo agrandie">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <!-- ===== AVIS ===== -->
+  <section class="reviews section" id="avis">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Ils ont goûté</p>
+        <h2 class="section__title">Ce que disent les clients</h2>
+        <div class="reviews__score">
+          <span class="reviews__big">4,7</span>
+          <div>
+            <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+            <p>Moyenne sur 184 avis Google, et 4,9/5 sur Facebook</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__grid">
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-hidden="true">★★★★★</span>
+          <p>« Incontestablement les meilleures frites de la région ! Produits de qualité, préparations maison à tomber, tout est une tuerie. »</p>
+          <footer><strong>Camille Galand</strong><span>Avis Facebook</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-hidden="true">★★★★★</span>
+          <p>« Une vraie friterie digne de ce nom. Cuisson parfaite, hamburgers fabuleux au steak Angus, mayonnaise maison au top, accueil professionnel. »</p>
+          <footer><strong>Tony Bizet</strong><span>Avis Facebook</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-hidden="true">★★★★★</span>
+          <p>« Cela fait plusieurs fois que nous venons. Toujours bien servis et tout est délicieux. Portions généreuses, plats excellents. »</p>
+          <footer><strong>Mel Hns</strong><span>Avis Facebook</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-hidden="true">★★★★★</span>
+          <p>« On vient de découvrir et franchement très satisfait. Très bon, et généreux dans les accompagnements. »</p>
+          <footer><strong>Del Mano</strong><span>Avis Facebook</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFOS & HORAIRES ===== -->
+  <section class="infos section" id="infos">
+    <div class="container infos__grid">
+      <div class="infos__hours reveal">
+        <p class="section__eyebrow">Horaires</p>
+        <h2 class="section__title">Quand venir ?</h2>
+        <p class="section__note">Horaires à confirmer avec Chez Gus.</p>
+        <ul class="hours">
+          <li><span>Lundi</span><span>18h00 - 21h00</span></li>
+          <li><span>Mardi</span><span>18h00 - 21h00</span></li>
+          <li><span>Mercredi</span><span>18h00 - 21h00</span></li>
+          <li><span>Jeudi</span><span>18h00 - 21h00</span></li>
+          <li class="hours--hl"><span>Vendredi</span><span>18h00 - 22h00</span></li>
+          <li class="hours--hl"><span>Samedi</span><span>18h00 - 22h00</span></li>
+          <li><span>Dimanche</span><span>18h00 - 21h00</span></li>
+        </ul>
+      </div>
+
+      <div class="infos__contact reveal" id="contact">
+        <p class="section__eyebrow">Nous trouver</p>
+        <h2 class="section__title">Coordonnées</h2>
+        <ul class="contact-list">
+          <li>
+            <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Chez+Gus+Friterie+37+Avenue+Paul+Pastur+Thulin" target="_blank" rel="noopener">
+              <span class="contact-item__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="contact-item__label">37 Avenue Paul Pastur, 7350 Thulin (Hensies)</span>
+              <span class="contact-item__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-item" href="mailto:chezgus7350@gmail.com">
+              <span class="contact-item__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+              <span class="contact-item__label">chezgus7350@gmail.com</span>
+              <span class="contact-item__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-item" href="https://www.instagram.com/chezgus7350/" target="_blank" rel="noopener">
+              <span class="contact-item__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+              <span class="contact-item__label">@chezgus7350</span>
+              <span class="contact-item__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-item" href="https://www.facebook.com/ChezGusFriterie/" target="_blank" rel="noopener">
+              <span class="contact-item__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg></span>
+              <span class="contact-item__label">Chez Gus Friterie</span>
+              <span class="contact-item__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn--primary" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/dir/?api=1&destination=Chez+Gus+Friterie+37+Avenue+Paul+Pastur+Thulin">
+          Itinéraire Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe
+        title="Carte de localisation de Chez Gus à Thulin"
+        src="https://maps.google.com/maps?q=37%20Avenue%20Paul%20Pastur%20Thulin%20Hensies&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="brand__name brand__name--footer">Chez Gus</span>
+        <p>Votre friterie conviviale à Thulin (Hensies). Frites fraîches, burgers maison et bonne humeur.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="carte.html">La carte complète</a></li>
+          <li><a href="nouveautes.html">Nouveautés</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#infos">Infos & Horaires</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/chezgus7350/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ChezGusFriterie/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:chezgus7350@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Chez Gus, Thulin (Hensies). Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js?v=2"></script>
+</body>
+</html>
