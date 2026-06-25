@@ -216,6 +216,45 @@ img { max-width: 100%; display: block; }
   font-size: .98rem;
 }
 .hero__stars { color: var(--jaune); letter-spacing: 2px; }
+.hero__badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
+
+/* ===== BADGE OUVERT / FERMÉ ===== */
+.open-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: .95rem;
+  background: var(--creme-2);
+  color: var(--brun);
+  border: 1px solid transparent;
+}
+.open-badge__dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gris);
+  flex-shrink: 0;
+}
+.open-badge.is-open { background: rgba(74, 120, 60, .14); color: #2f5d27; border-color: rgba(74, 120, 60, .35); }
+.open-badge.is-open .open-badge__dot { background: #3da35d; box-shadow: 0 0 0 4px rgba(61, 163, 93, .25); animation: pulse-dot 2s ease-in-out infinite; }
+.open-badge.is-closed { background: rgba(193, 39, 45, .1); color: #a3242a; border-color: rgba(193, 39, 45, .3); }
+.open-badge.is-closed .open-badge__dot { background: #c1272d; }
+/* Version dans le hero (sur fond sombre) */
+.open-badge--hero { background: rgba(255, 255, 255, .14); color: var(--blanc); border: 1px solid rgba(255, 255, 255, .3); }
+.open-badge--hero.is-open { color: #d7f0cf; }
+.open-badge--hero.is-closed { color: #f5c9cb; }
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(61, 163, 93, .25); }
+  50% { box-shadow: 0 0 0 6px rgba(61, 163, 93, .08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .open-badge.is-open .open-badge__dot { animation: none; }
+}
+
+/* Boutons sous les avis */
+.reviews__cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 36px; }
 .hero__wave {
   position: absolute; bottom: -1px; left: 0; right: 0; height: 70px;
   background: var(--creme);

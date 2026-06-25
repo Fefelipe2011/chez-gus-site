@@ -361,5 +361,74 @@ navLinks.forEach((link) => {
     });
 })();
 
+// ===== Badge "Ouvert / Fermé maintenant" =====
+(function initOpenStatus() {
+  const badges = document.querySelectorAll('[data-open-badge]');
+  if (!badges.length) return;
+
+  // Horaires (à garder identiques au tableau affiché). Index : 0=dimanche … 6=samedi.
+  // Chaque jour = liste de créneaux [début, fin] en minutes depuis minuit (18h = 18*60).
+  const HORAIRES = {
+    0: [[18 * 60, 21 * 60]], // dimanche
+    1: [[18 * 60, 21 * 60]], // lundi
+    2: [[18 * 60, 21 * 60]], // mardi
+    3: [[18 * 60, 21 * 60]], // mercredi
+    4: [[18 * 60, 21 * 60]], // jeudi
+    5: [[18 * 60, 22 * 60]], // vendredi
+    6: [[18 * 60, 22 * 60]], // samedi
+  };
+  const JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+
+  function fmt(min) {
+    const h = Math.floor(min / 60);
+    const m = min % 60;
+    return m === 0 ? h + 'h' : h + 'h' + String(m).padStart(2, '0');
+  }
+
+  const now = new Date();
+  const day = now.getDay();
+  const cur = now.getHours() * 60 + now.getMinutes();
+
+  // Ouvert maintenant ?
+  let openNow = null;
+  for (const [start, end] of (HORAIRES[day] || [])) {
+    if (cur >= start && cur < end) { openNow = end; break; }
+  }
+
+  let isOpen, text;
+  if (openNow !== null) {
+    isOpen = true;
+    text = 'Ouvert · ferme à ' + fmt(openNow);
+  } else {
+    isOpen = false;
+    // Cherche la prochaine ouverture (aujourd'hui plus tard, puis jours suivants)
+    let next = null;
+    for (let off = 0; off < 8 && !next; off++) {
+      const d = (day + off) % 7;
+      for (const [start] of (HORAIRES[d] || [])) {
+        if (off === 0 && start <= cur) continue;
+        next = { off, start };
+        break;
+      }
+    }
+    if (!next) {
+      text = 'Fermé actuellement';
+    } else if (next.off === 0) {
+      text = 'Fermé · ouvre à ' + fmt(next.start);
+    } else if (next.off === 1) {
+      text = 'Fermé · ouvre demain à ' + fmt(next.start);
+    } else {
+      text = 'Fermé · ouvre ' + JOURS[(day + next.off) % 7] + ' à ' + fmt(next.start);
+    }
+  }
+
+  badges.forEach((b) => {
+    b.classList.toggle('is-open', isOpen);
+    b.classList.toggle('is-closed', !isOpen);
+    const t = b.querySelector('.open-badge__text');
+    if (t) t.textContent = text;
+  });
+})();
+
 // ===== Année dynamique dans le footer =====
 document.getElementById('year').textContent = new Date().getFullYear();

@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
 
@@ -61,9 +61,12 @@
         <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
         <a href="#contact" class="btn btn--ghost">Nous trouver</a>
       </div>
-      <div class="hero__badge reveal">
-        <span class="hero__stars" aria-hidden="true">★★★★★</span>
-        <span><strong>4,7/5</strong> sur Google, 184 avis</span>
+      <div class="hero__badges reveal">
+        <div class="hero__badge">
+          <span class="hero__stars" aria-hidden="true">★★★★★</span>
+          <span><strong>4,7/5</strong> sur Google, 184 avis</span>
+        </div>
+        <span class="open-badge open-badge--hero" data-open-badge><span class="open-badge__dot"></span><span class="open-badge__text">Horaires…</span></span>
       </div>
     </div>
   </section>
@@ -194,6 +197,11 @@
           <footer><strong>Del Mano</strong><span>Avis Facebook</span></footer>
         </blockquote>
       </div>
+
+      <div class="reviews__cta reveal">
+        <a class="btn btn--primary" href="https://search.google.com/local/writereview?placeid=ChIJ0bWtznr3wkcReyKsiwReXi0" target="_blank" rel="noopener">Laisser un avis</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJ0bWtznr3wkcReyKsiwReXi0" target="_blank" rel="noopener">Voir les avis Google</a>
+      </div>
     </div>
   </section>
 
@@ -203,6 +211,7 @@
       <div class="infos__hours reveal">
         <p class="section__eyebrow">Horaires</p>
         <h2 class="section__title">Quand venir ?</h2>
+        <span class="open-badge" data-open-badge><span class="open-badge__dot"></span><span class="open-badge__text">Horaires…</span></span>
         <p class="section__note">Horaires à confirmer avec Chez Gus.</p>
         <ul class="hours">
           <li><span>Lundi</span><span>18h00 - 21h00</span></li>
@@ -297,6 +306,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
