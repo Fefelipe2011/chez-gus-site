@@ -5,3 +5,6 @@ desktop.ini
 
 # Capture d'écran source du logo (le logo utilisé est dans assets/logo.png)
 Capture*.png
+
+# Fichiers d'aperçu / test (ne pas déployer)
+preview-*.html

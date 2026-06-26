@@ -649,6 +649,57 @@ img { max-width: 100%; display: block; }
 .footer ul li { padding: 6px 0; }
 .footer ul a { display: inline-block; transition: color .2s ease, transform .2s ease; }
 .footer ul a:hover { color: var(--jaune); transform: translateX(4px); }
+
+/* ===== MENU RÉSEAUX (gradient, façon pilule qui s'ouvre au survol) ===== */
+.gmenu { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; list-style: none; margin: 6px 0 0; padding: 0; }
+ul.gmenu li { padding: 0; margin: 0; }
+.gmenu .gmenu__item {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .3);
+  transition: width .5s ease, box-shadow .5s ease;
+  text-decoration: none;
+  transform: none;
+}
+.gmenu .gmenu__item:hover { width: 140px; box-shadow: none; transform: none; }
+.gmenu .gmenu__bg {
+  position: absolute; inset: 0; border-radius: 50px;
+  background: linear-gradient(45deg, var(--from), var(--to));
+  opacity: 0; transition: opacity .5s ease;
+}
+.gmenu .gmenu__item:hover .gmenu__bg { opacity: 1; }
+.gmenu .gmenu__glow {
+  position: absolute; top: 8px; left: 0; right: 0; height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--from), var(--to));
+  filter: blur(14px); opacity: 0; z-index: -1;
+  transition: opacity .5s ease;
+}
+.gmenu .gmenu__item:hover .gmenu__glow { opacity: .45; }
+.gmenu .gmenu__icon {
+  position: relative; z-index: 10;
+  display: flex; align-items: center; justify-content: center;
+  color: #6b7280;
+  transition: transform .5s ease;
+}
+.gmenu .gmenu__item:hover .gmenu__icon { transform: scale(0); }
+.gmenu .gmenu__icon svg { width: 23px; height: 23px; }
+.gmenu .gmenu__label {
+  position: absolute; z-index: 10;
+  color: #fff; text-transform: uppercase; letter-spacing: 1px;
+  font-size: .8rem; font-weight: 700;
+  transform: scale(0);
+  transition: transform .5s ease .15s;
+  white-space: nowrap;
+}
+.gmenu .gmenu__item:hover .gmenu__label { transform: scale(1); }
+@media (prefers-reduced-motion: reduce) {
+  .gmenu .gmenu__item, .gmenu .gmenu__bg, .gmenu .gmenu__glow,
+  .gmenu .gmenu__icon, .gmenu .gmenu__label { transition: none; }
+}
 .footer__bottom {
   margin-top: 40px; padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, .15);
